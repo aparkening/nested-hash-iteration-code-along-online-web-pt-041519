@@ -16,5 +16,6 @@ require 'pry'
 
 # Remove "strawberry" from Freddy Mercury's ice cream array  
 def remove_strawberry(contacts)
+  binding.pry 
   contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
 end
