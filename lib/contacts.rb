@@ -20,5 +20,5 @@ def remove_strawberry(contacts)
   # Easy way: 
   # contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
   
-  
+  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if {  
 end
