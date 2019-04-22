@@ -13,7 +13,8 @@ require 'pry'
   #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
   # }
-  
-def remove_strawberry(contacts)
 
+# Remove "strawberry" from Freddy Mercury's ice cream array  
+def remove_strawberry(contacts)
+  
 end
