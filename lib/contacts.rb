@@ -13,7 +13,23 @@ require 'pry'
   #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
   # }
-  
-def remove_strawberry(contacts)
 
+# Remove "strawberry" from Freddy Mercury's ice cream array  
+def remove_strawberry(contacts)
+  # Direct way:
+  # contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
+  
+  # Longest way:
+  # contacts.each do |person, contact_details_hash|
+  #   contact_details_hash.each do |attribute, data|
+  #     if attribute == :favorite_ice_cream_flavors
+  #       data.delete_if {|ice_cream| ice_cream == "strawberry"}
+  #     end
+  #   end
+  # end
+  
+  # Quicker iterative way: 
+  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if {|flavor| flavor == "strawberry" }
+  
+  contacts
 end
