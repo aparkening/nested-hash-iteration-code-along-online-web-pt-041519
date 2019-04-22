@@ -19,9 +19,6 @@ def remove_strawberry(contacts)
   # Direct way:
   # contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
   
-  # Iterative way: 
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if {|flavor| flavor == "strawberry" }
-  
   # Longest way:
   # contacts.each do |person, contact_details_hash|
   #   contact_details_hash.each do |attribute, data|
@@ -30,6 +27,9 @@ def remove_strawberry(contacts)
   #     end
   #   end
   # end
+  
+  # Quicker iterative way: 
+  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if {|flavor| flavor == "strawberry" }
   
   contacts
 end
